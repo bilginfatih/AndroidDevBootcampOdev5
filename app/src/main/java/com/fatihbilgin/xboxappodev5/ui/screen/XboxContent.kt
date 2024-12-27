@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import com.fatihbilgin.xboxappodev5.ui.screen.components.XboxBackgroundImage
 import com.fatihbilgin.xboxappodev5.ui.screen.components.XboxButtons
 import com.fatihbilgin.xboxappodev5.ui.screen.components.XboxDetailsAndFeatures
+import com.fatihbilgin.xboxappodev5.ui.screen.components.XboxExpandableText
 import com.fatihbilgin.xboxappodev5.ui.screen.components.XboxGameDetails
 import com.fatihbilgin.xboxappodev5.ui.screen.components.XboxPegiDetails
 
@@ -35,6 +36,9 @@ fun XboxContent(paddingValues: PaddingValues) {
             item { XboxPegiDetails() }
             item { Spacer(modifier = Modifier.height(16.dp)) }
             item { XboxDetailsAndFeatures() }
+            item { XboxExpandableText(
+                text = "Cyberpunk 2077 güce, gösterişe ve vücut modifikasyonuna takıntısı olan Night City adlı megapoliste geçen bir açık dünya, aksiyon ve macera RPG oyunudur. Bir siber haydut paralı asker olan V olarak oynayın, hayatta kalma mücadelesinde şan ve şöhret için şehrin en büyük güçlerine karşı savaşın."
+            ) }
         }
     }
 }
